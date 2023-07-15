@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './header.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdClose } from 'react-icons/md'
-import ReactDOM from 'react-dom';
+
 
 
 
@@ -29,8 +29,7 @@ function Header() {
         </div>
       </div>
       <div className="mobile__header">
-    {open &&
-        ReactDOM.createPortal(
+    {open &&(
           <div className="mobile__header">
             <div className="mobile__header__items" onClick={() => setOpen(!open)}>
               <p>What do we do?</p>
@@ -38,8 +37,7 @@ function Header() {
               <p>About us</p>
               <p>Contact us</p>
             </div>
-          </div>,
-          document.body
+          </div>
         )}
       </div>
     </div>
