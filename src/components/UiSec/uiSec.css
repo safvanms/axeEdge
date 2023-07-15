@@ -1,0 +1,246 @@
+.uiSec {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 10px 0;
+  background: linear-gradient(
+    to bottom,
+    #ffff,
+    rgba(243, 251, 255, 0.63),
+    #ffff
+  );
+}
+
+.uiSec > div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+.uiClass__content {
+  padding-inline: 90px;
+}
+
+.uiClass__content h1 {
+  font-size: 35px;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid var(--blue);
+  width: fit-content;
+}
+
+.uiClass__content h1 {
+  text-align: left;
+}
+
+.uiClass__content h2 {
+  width: 600px;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.ui__left__sec {
+  width: 650px;
+  height: 400px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.web__design__contents {
+  width: 30%;
+  height: 26%;
+  box-shadow: 0 1px 3px var(--shadow-color);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-inline: 2px;
+}
+
+.web__design__contents:hover {
+  background-color: var(--green);
+  font-size: 20px;
+  transition: 0.4s;
+  transform: scale(1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.ui__right__sec {
+  width: 400px;
+  height: 410px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transform: rotate(180deg);
+  transition: 1.5s;
+}
+
+.ui__right__sec:hover {
+  transform: rotate(0deg);
+}
+
+.ui__box {
+  width: 31%;
+  height: 31%;
+  border-radius: 6px;
+}
+
+.box1 {
+  background-color: var(--blue);
+  border-radius: 0 100% 0 0;
+}
+
+.box2,
+.box8,
+.box4,
+.box6 {
+  visibility: hidden;
+}
+
+.box3 {
+  background-color: yellowgreen;
+  border-radius: 100% 100% 100% 0%;
+}
+
+.box5 {
+  background-color: rgb(184, 186, 177);
+}
+
+.box7 {
+  border-radius: 0 0 100% 100%;
+  background-color: var(--green);
+}
+
+.box9 {
+  border-radius: 0% 0% 0% 100%;
+  background-color: rgb(165, 61, 61);
+}
+
+.web__sec__2 {
+  padding: 30px 90px;
+  display: flex;
+  flex-direction: column;
+  background:linear-gradient(
+     to bottom,
+     #ffff,
+     rgba(236, 248, 252, 0.63),
+     #ffff
+   );
+}
+
+.web__sec__2 > h2 {
+  margin: 40px 0;
+  border-bottom: 1px solid var(--green);
+  width: max-content;
+  font-size: 25px;
+}
+
+.web__sec__2__content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+.web__sec__2 img {
+  width: 550px;
+  border-radius: 5px;
+}
+
+.web__sec__2__right {
+  width: 650px;
+  height: 380px;
+  background-color: rgb(44, 44, 44);
+  padding: 20px;
+  overflow: scroll;
+  border-radius: 10px;
+}
+
+.web__sec__2__right p {
+  color: #ffff;
+}
+
+.web__sec__2__right::-webkit-scrollbar {
+  width: 0;
+}
+
+.web__sec__2__right > h2 {
+  font-size: 16px;
+  border-bottom: 1px solid var(--darkGrey);
+  width: max-content;
+  color: var(--green);
+}
+
+
+/* responsive codes */
+
+
+@media (max-width: 800px) {
+  .ui__right__sec {
+    height: 380px;
+  }
+  .uiSec > div {
+    flex-wrap: wrap;
+    padding-inline: 10px;
+    padding-top: 30px;
+  }
+  .uiClass__content {
+    padding-inline: 20px;
+  }
+  .uiClass__content h2 {
+    width: 100%;
+    font-size: 18px;
+  }
+  .web__sec__2 {
+     padding: 0px;
+    margin: 20px 10px;
+  }
+  .web__sec__2 img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .web__sec__2 > h2 {
+    font-size: 22px;
+  }
+  .web__sec__2__content {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 525px) {
+  .ui__left__sec {
+    width: 380px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .web__design__contents:hover {
+    font-size: 18px;
+  }
+  .web__design__contents {
+    font-size: 11px;
+  }
+  .web__sec__2__right {
+    height: 390px;
+    width: 100%;
+    padding: 10px;
+  }
+  .web__sec__2__right > h2 {
+    font-size: 15px;
+  }
+  .web__sec__2__right > p {
+    font-size: 14px;
+  }
+}

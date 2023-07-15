@@ -1,0 +1,17 @@
+:root {
+  --blue: #1296b0;
+  --darkBlue: #106475;
+  --grey:#e7e6e6;
+  --lightGrey:#f3f3f3;
+  --green:#5bcc88;
+  --darkGrey:rgb(147, 147, 147);
+  --primary-gradient: linear-gradient(to bottom, #1296b0, #106475); 
+  --gradient-hover: linear-gradient(to bottom, #137487, #13454f); 
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
