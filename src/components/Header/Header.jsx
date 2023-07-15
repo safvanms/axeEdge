@@ -3,6 +3,9 @@ import './header.css'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdClose } from 'react-icons/md'
 
+
+
+
 function Header() {
   const [open, setOpen] = useState(false)
 
@@ -26,14 +29,16 @@ function Header() {
         </div>
       </div>
       <div className="mobile__header">
-      {open && (
-        <div className="mobile__header__items" onClick={() => setOpen(!open)}>
-          <p>What do we do ?</p>
-          <p>Best offer leadings !</p>
-          <p>About us</p>
-          <p>Contact us</p>
-        </div>
-      )}
+    {open &&(
+          <div className="mobile__header">
+            <div className="mobile__header__items" onClick={() => setOpen(!open)}>
+              <p>What do we do?</p>
+              <p>Best offer leadings!</p>
+              <p>About us</p>
+              <p>Contact us</p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )
