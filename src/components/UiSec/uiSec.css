@@ -26,10 +26,13 @@
   margin: 0 0 20px 0;
   border-bottom: 1px solid var(--blue);
   width: fit-content;
+  text-align: left;
 }
 
-.uiClass__content h1 {
-  text-align: left;
+.uiClass__content h1 span{
+  background-image: linear-gradient(to right, blue, rgb(118, 193, 218));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .uiClass__content h2 {
@@ -64,7 +67,7 @@
 .web__design__contents:hover {
   background-color: var(--green);
   font-size: 20px;
-  transition: 0.4s;
+  transition: 0.6s;
   transform: scale(1);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;

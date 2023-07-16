@@ -80,7 +80,6 @@
   align-items: flex-end;
   font-size: 24px;
   color: white;
-  /* max-width: 300px; */
 }
 
 .intro__text h2 {
@@ -100,10 +99,108 @@
 
 .intro__right__section {
   width: 500px;
-  height: 350px;
-  background-color: var(--lightGrey);
-  border-radius: 20px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #282828;
+  gap: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px var(--shadow-color);
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 10px 0;
+  font-weight: bold;
 }
+
+@media (min-width: 526px) {
+.intro__right__section:hover {
+transform: scale(1.1);
+border-radius: 6px;
+transition: 2s ease-in-out;
+}
+}
+
+.intro__right__section.flipped {
+  transform: rotateY(180deg);
+transition: 2s ease-out;
+}
+
+
+.intro__right__section.flipped .intro__carousal {
+  transform: rotateY(180deg);
+  transition: 2s ease-out;
+}
+
+
+.intro__right__section h4 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.intro__right__section h2 {
+  font-size: 25px;
+  margin: 0;
+  color: var(--darkBlue);
+}
+
+.intro__right__section h3 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.intro__right__section h5 {
+  font-size: 32px;
+  margin: 0;
+  color: var(--blue);
+}
+
+.loading__dotes {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+
+.loading__dotes span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.loading__dotes span:nth-child(1) {
+  background-color: rgb(111, 111, 109);
+  animation: bounce 1s infinite;
+}
+
+.loading__dotes span:nth-child(2) {
+  background-color: rgb(93, 93, 93);
+  animation: bounce 1.1s infinite;
+}
+
+.loading__dotes span:nth-child(3) {
+  background-color: rgb(68, 68, 67);
+  animation: bounce 1.2s infinite;
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.carousal__img{
+width: 100%;
+padding: 5px 0;
+}
+
+
 
 .sm__contact__area {
   display: none;
@@ -119,7 +216,7 @@
 
   .intro__heading1 {
     justify-content: center;
-    margin: 60px 0 0 0;
+    margin: 40px 0 0 0;
     padding-bottom: 5px;
   }
 
@@ -152,8 +249,9 @@
     color: #fff;
   }
   .intro__left__section {
-border-radius: 0;
+    border-radius: 0;
   }
+
 }
 
 @media (max-width: 525px) {
@@ -185,10 +283,17 @@ border-radius: 0;
     position: absolute;
     z-index: 1;
     padding-inline: 10px;
+    bottom: 0;
+    left: 0;
   }
 
   .intro__text h2 {
-    margin: 0 0 20px 0;
+    margin: 0 0 25px 0;
     width: 200px;
   }
+
+  .intro__right__section:hover {
+    border-radius: 6px;
+    transition: 1s ;
+    }
 }
