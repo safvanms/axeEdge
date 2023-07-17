@@ -15,4 +15,11 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: linear-gradient(
+    to right,
+    rgba(178, 224, 248, 0.141),
+    #ffff,
+    #ffff,
+    rgba(209, 236, 249, 0.306)
+  );
 }

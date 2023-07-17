@@ -2,12 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: 80px 0 10px 0;
-  background: linear-gradient(
-    to bottom,
-    #ffff,
-    rgba(243, 251, 255, 0.63),
-    #ffff
-  );
+ 
 }
 
 .uiSec > div {
@@ -35,9 +30,9 @@
   -webkit-text-fill-color: transparent;
 }
 
-.uiClass__content h2 {
-  width: 600px;
-  font-size: 25px;
+.ui__details {
+  width: 50%;
+  font-size: 22px;
   font-weight: normal;
 }
 
@@ -62,6 +57,7 @@
   align-items: center;
   position: relative;
   padding-inline: 2px;
+  background-color: #ffff;
 }
 
 .web__design__contents:hover {
@@ -131,12 +127,6 @@
   padding: 30px 90px;
   display: flex;
   flex-direction: column;
-  background:linear-gradient(
-     to bottom,
-     #ffff,
-     rgba(236, 248, 252, 0.63),
-     #ffff
-   );
 }
 
 .web__sec__2 > h2 {
@@ -161,14 +151,15 @@
 .web__sec__2__right {
   width: 650px;
   height: 380px;
-  background-color: rgb(44, 44, 44);
+  background-color: transparent;
   padding: 20px;
   overflow: scroll;
   border-radius: 10px;
 }
 
 .web__sec__2__right p {
-  color: #ffff;
+  color: black;
+  font-size: 16px;
 }
 
 .web__sec__2__right::-webkit-scrollbar {
@@ -198,9 +189,8 @@
   .uiClass__content {
     padding-inline: 20px;
   }
-  .uiClass__content h2 {
+  .ui__details {
     width: 100%;
-    font-size: 18px;
   }
   .web__sec__2 {
      padding: 0px;

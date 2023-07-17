@@ -68,7 +68,7 @@
 .intro__left__section {
   width: 600px;
   height: 400px;
-  background-color: var(--green);
+  background-color: var(--blue);
   border-radius: 20px;
   display: flex;
   padding-inline: 10px;
@@ -112,6 +112,7 @@
   border-radius: 16px;
   padding: 10px 0;
   font-weight: bold;
+  background-color: #fff;
 }
 
 @media (min-width: 526px) {

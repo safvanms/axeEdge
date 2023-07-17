@@ -8,11 +8,11 @@ export default function UiSec() {
       <div className="uiSec">
         <content className="uiClass__content">
           <h1>web <span>Design</span></h1>
-          <h2>
+          <p className='ui__details'>
             Web design plays a crucial role in creating an engaging and
             user-friendly website. It encompasses various aspects, including
             visual aesthetics, user experience, and functionality
-          </h2>
+          </p>
         </content>
 
         <div>
