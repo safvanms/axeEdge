@@ -1,6 +1,7 @@
 import React from 'react'
 import './uiSec.css'
-import IMG1 from '../../assets/webDesign2.jpg'
+import WEB_ROUTE from '../../assets/wbd.png'
+import IMG1 from '../../assets/table.png'
 
 export default function UiSec() {
   return (
@@ -17,37 +18,26 @@ export default function UiSec() {
 
         <div>
           <div className="ui__left__sec">
-            <div className="web__design__contents web1"> Visual Appeal </div>
-            <div className="web__design__contents web2">
+            <div className="web__design__contents "> Visual Appeal </div>
+            <div className="web__design__contents ">
               Consistent Branding
             </div>
-            <div className="web__design__contents web3">
+            <div className="web__design__contents ">
               User-Friendly Navigation
             </div>
-            <div className="web__design__contents web4">Responsive Design</div>
-            <div className="web__design__contents web5">
-              Whitespace and Layout
-            </div>
-            <div className="web__design__contents web6">Page Load Speed</div>
-            <div className="web__design__contents web7">
+            <div className="web__design__contents ">Responsive Design</div>
+            <div className="web__design__contents ">Page Load Speed</div>
+            <div className="web__design__contents ">
               Call-to-Action (CTA) Buttons
             </div>
-            <div className="web__design__contents web8">Accessibility</div>
-            <div className="web__design__contents web9">
+            <div className="web__design__contents ">Accessibility</div>
+            <div className="web__design__contents ">
               Cross-Browser Compatibility
             </div>
           </div>
 
           <div className="ui__right__sec">
-            <div className="ui__box box1"></div>
-            <div className="ui__box box2"></div>
-            <div className="ui__box box3"></div>
-            <div className="ui__box box4"></div>
-            <div className="ui__box box5"></div>
-            <div className="ui__box box6"></div>
-            <div className="ui__box box7"></div>
-            <div className="ui__box box8"></div>
-            <div className="ui__box box9"></div>
+          <img src={WEB_ROUTE} alt="rout map" /> 
           </div>
         </div>
       </div>
@@ -55,7 +45,9 @@ export default function UiSec() {
       <div className="web__sec__2">
         <h2>How we do your favour ?!</h2>
         <div className="web__sec__2__content">
-          <img src={IMG1} alt="" />
+          <div className='web__table__img'>
+          <img src={IMG1} alt="table"/>
+          </div>
           <div className="web__sec__2__right">
             <h2>Custom Web Design :</h2>
             <p>

@@ -11,6 +11,11 @@
      margin:0;
 }
 
+.anchors{
+     text-decoration: none;
+     color: #fff;
+}
+
 .footer h3{
      border-bottom: 1px solid var(--blue);
      width: fit-content;

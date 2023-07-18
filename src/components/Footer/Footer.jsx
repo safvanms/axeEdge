@@ -10,8 +10,12 @@ export default function Footer() {
         <div className="left__side__footer">
           <h3>Contact</h3>
           <p>
-            E-mail : <span>axeedgesolves@gmail.com</span>
+            E-mail :{' '}
+            <a className='anchors' href="mailto:axeedgesolves@gmail.com"> 
+              axeedgesolves@gmail.com
+            </a>
           </p>
+
           <p>
             Phone : <span>+xx xxx xxx xxxx</span>
           </p>

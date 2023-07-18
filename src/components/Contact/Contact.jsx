@@ -21,29 +21,22 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log(result)
           setDone(true)
           e.target.reset()
           setClicked(false)
         },
         (error) => {
-          console.log(error)
+          console.error(error)
         },
       )
   }
 
   return (
     <div className="contact-form" id="contact">
-      <div className="w-left">
         <div className="contact-head">
-          <span>Get in touch</span>
-          <span>Contact us</span>
-          <div
-            className="blur s-blur1"
-            style={{ background: '#ABF1FF94' }}
-          ></div>
+          <h1>Get in touch</h1>
+          <span>Contact <span className='span'>us</span></span>
         </div>
-      </div>
 
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
@@ -81,7 +74,7 @@ export default function Contact() {
           )}
 
           {done && (
-            <div style={{ fontSize: '18px', textAlign: 'center' }}>
+            <div style={{ fontSize: '15px', textAlign: 'center' }}>
               {' '}
               Thanks for contacting us , we'll contact you later. 😊
             </div>

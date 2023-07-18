@@ -51,22 +51,23 @@
   width: 30%;
   height: 26%;
   box-shadow: 0 1px 3px var(--shadow-color);
-  border-radius: 6px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   padding-inline: 2px;
   background-color: #ffff;
+  text-align: center;
 }
 
 .web__design__contents:hover {
   background-color: var(--green);
-  font-size: 20px;
+  font-size: 18px;
   transition: 0.6s;
   transform: scale(1);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .ui__right__sec {
@@ -77,50 +78,15 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  transform: rotate(180deg);
-  transition: 1.5s;
+  transition: 1s;
+}
+
+.ui__right__sec img{
+width: 99%;
 }
 
 .ui__right__sec:hover {
-  transform: rotate(0deg);
-}
-
-.ui__box {
-  width: 31%;
-  height: 31%;
-  border-radius: 6px;
-}
-
-.box1 {
-  background-color: var(--blue);
-  border-radius: 0 100% 0 0;
-}
-
-.box2,
-.box8,
-.box4,
-.box6 {
-  visibility: hidden;
-}
-
-.box3 {
-  background-color: yellowgreen;
-  border-radius: 100% 100% 100% 0%;
-}
-
-.box5 {
-  background-color: rgb(184, 186, 177);
-}
-
-.box7 {
-  border-radius: 0 0 100% 100%;
-  background-color: var(--green);
-}
-
-.box9 {
-  border-radius: 0% 0% 0% 100%;
-  background-color: rgb(165, 61, 61);
+  transform: scale(1.1);
 }
 
 .web__sec__2 {
@@ -143,9 +109,17 @@
   gap: 30px;
 }
 
-.web__sec__2 img {
-  width: 550px;
-  border-radius: 5px;
+.web__table__img{
+border: 1px dotted var(--darkGrey);
+border-radius: 15px;
+padding: 5px;
+}
+
+.web__table__img>img {
+  border-radius: 13px;
+width: 550px;
+background-color: #fff;
+
 }
 
 .web__sec__2__right {
@@ -210,20 +184,22 @@
 
 @media (max-width: 525px) {
   .ui__left__sec {
-    width: 380px;
-    height: 350px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 8px;
+    padding-bottom: 60px;
   }
   .web__design__contents:hover {
     font-size: 18px;
   }
   .web__design__contents {
     font-size: 11px;
+    width: 40%;
+    gap: 80px;
+    justify-content: space-evenly;
   }
   .web__sec__2__right {
     height: 390px;
