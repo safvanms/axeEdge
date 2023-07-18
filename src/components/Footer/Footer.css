@@ -2,6 +2,7 @@
      background-color: var(--darkBlue);
      padding: 30px 90px 0 90px;
      display: flex;
+     height: 250px;
      justify-content: space-around;
      color: #ffff;
 }
@@ -22,6 +23,7 @@
      flex-direction: column;
      background-color: var(--darkBlue);
      color: #fff;
+     padding-bottom: 10px;
 }
 
 .footer__icons{
@@ -36,7 +38,7 @@
      width: 35px;
      height: 35px;
      border: 1px solid #aaa9a9;
-     border-radius: 15px;
+     border-radius: 12px;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -56,5 +58,6 @@ color: #ffff;
     .footer{
      padding: 30px 20px 15px 20px;
      display: block;
+     height: auto;
     }
 }

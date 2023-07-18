@@ -17,9 +17,8 @@ body{
   box-sizing: border-box;
   background: linear-gradient(
     to right,
-    rgba(178, 224, 248, 0.141),
+    rgba(178, 224, 248, 0.368),
     #ffff,
-    #ffff,
-    rgba(209, 236, 249, 0.306)
+    rgba(227, 209, 249, 0.434)
   );
 }
