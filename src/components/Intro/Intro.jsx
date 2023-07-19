@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './intro.css'
 import MAN from '../../assets/man.png'
 import PEOPLE from '../../assets/people.png'
+import { Link } from 'react-scroll'
+
 
 const introHeads = [
   {
@@ -127,7 +129,7 @@ export default function Intro() {
 
       <div className="sm__contact__area">
         <div>
-          <span>Contact Us</span>
+          <Link spy={true} smooth={true} to="contact"><span>Contact Us</span></Link>
           <span></span>
         </div>
       </div>
