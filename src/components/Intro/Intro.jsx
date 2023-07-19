@@ -127,12 +127,14 @@ export default function Intro() {
         </div>
       </div>
 
+      <Link spy={true} smooth={true} to="contact">
       <div className="sm__contact__area">
         <div>
-          <Link spy={true} smooth={true} to="contact"><span>Contact Us</span></Link>
+          <span>Contact Us</span>
           <span></span>
         </div>
       </div>
+        </Link>
     </div>
   )
 }
